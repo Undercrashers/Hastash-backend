@@ -11,11 +11,15 @@ opencv-contrib-python==4.10.0.84
 pillow==10.3.0
 joblib==1.4.2
 
-# TensorFlow (CPU optimized, version aligned with model)
+# TensorFlow (CPU optimized)
 tensorflow-cpu==2.20.0
 keras==3.5.0
 h5py==3.11.0
-protobuf==4.25.5
+protobuf==5.28.3
+opt-einsum==3.4.0
+wrapt==1.17.3
+six==1.17.0
+typing-extensions==4.10.0
 
 # Auth and Google integrations
 google-auth==2.33.0
