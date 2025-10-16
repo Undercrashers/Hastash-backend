@@ -68,11 +68,11 @@ def predict():
     print(f"File saved successfully. Size: {os.path.getsize(filepath)} bytes")
     
     try:
-        # Get prediction
+
         print("Calling predict_mudra function...")
         label, confidence = predict_mudra(filepath)
         
-        # Clean up
+
         print(f"Removing temporary file: {filepath}")
         os.remove(filepath)
         
@@ -86,7 +86,6 @@ def predict():
         return jsonify(result)
         
     except Exception as e:
-        # Clean up on error
         if os.path.exists(filepath):
             os.remove(filepath)
         error_msg = f'Prediction failed: {str(e)}'
